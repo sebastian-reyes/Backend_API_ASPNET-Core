@@ -32,5 +32,22 @@ CREATE TABLE USUARIO(
 )
 GO
 
+CREATE TABLE PRODUCTOS(
+	ID_PROD INT NOT NULL PRIMARY KEY,
+	NOMBRE_PROD VARCHAR(50),
+	DESC_PROD TEXT,
+	STOCK_MIN INT,
+	STOCK_ACTUAL INT,
+	PRECIO DECIMAL(8,2)
+)
+GO
+
 INSERT INTO USUARIO VALUES(1,'sebastian-reyes','12345','Sebastián','Reyes','Quiroz','sebastian@gmail.com');
 INSERT INTO USUARIO VALUES(2,'pedro-sanchez','abc596','Pedro','Sánchez','Torres','pedro@gmail.com');
+
+INSERT INTO PRODUCTOS VALUES(1,'Laptop HP 250 G7','Laptop HP con procesador Core i5 8th Gen',3,50,1900.50);
+INSERT INTO PRODUCTOS VALUES(2,'Teclado Mecánico HyperX Alloy FPS','Teclado mecánico con switches CherryMX red',3,50,450.00);
+INSERT INTO PRODUCTOS VALUES(3,'Mouse Logitech G502 Hero','Mouse Gamer Logitech color negro',3,75,199.20);
+
+SELECT * FROM USUARIO;
+SELECT * FROM PRODUCTOS;
