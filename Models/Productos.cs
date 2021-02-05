@@ -16,6 +16,6 @@ namespace API_Login_CRUD.Models
         public string desc_prod { get; set; }
         public int stock_min { get; set; }
         public int stock_actual { get; set; }
-        public double precio { get; set; }
+        public decimal precio { get; set; }
     }
 }

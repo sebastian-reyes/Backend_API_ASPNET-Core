@@ -14,5 +14,6 @@ namespace API_Login_CRUD.Context
             
         }
         public DbSet<Usuario> usuarios { get; set; } 
+        public DbSet<Productos> productos { get; set; }
     }
 }
